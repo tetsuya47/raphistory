@@ -21,10 +21,10 @@
             theme: {
                 extend: {
                     colors: {
-                        brand: '#cba135', // Vàng Gold
+                        brand: '#cba135',
                         dark: '#0a0a0a',
                         darker: '#050505',
-                        accent: '#FF003C' // Đỏ Graffiti
+                        accent: '#FF003C'
                     },
                     fontFamily: {
                         heading: ['Anton', 'sans-serif'],
@@ -36,7 +36,6 @@
     </script>
 
     <style>
-        /* Custom Styles */
         body {
             background-color: #0a0a0a;
             color: #ffffff;
@@ -64,7 +63,6 @@
             box-shadow: 0 0 15px rgba(203, 161, 53, 0.5);
         }
 
-        /* Effects */
         .text-stroke {
             -webkit-text-stroke: 1px #cba135;
             color: transparent;
@@ -89,7 +87,6 @@
         .card-zoom img { transition: transform 0.5s ease; }
         .card-zoom:hover img { transform: scale(1.1); }
 
-        /* Mobile Menu */
         #mobile-menu {
             transition: transform 0.3s ease-in-out;
             transform: translateX(100%);
@@ -104,7 +101,6 @@
     <!-- NAVIGATION -->
     <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-darker/90 backdrop-blur-md border-b border-brand/20">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Logo -->
             <a href="#" class="flex items-center gap-3 group">
                 <img src="https://lh3.googleusercontent.com/a/ACg8ocKL8HPv58LawvA1Z_iUHdOqAJS6nVqW5EjKFciiIkct1S1oA1I=s360-c-no" 
                      alt="The Buffalo Wild Fly Logo" 
@@ -120,15 +116,15 @@
                 <a href="#hero" class="text-white hover:text-brand font-bold uppercase text-sm tracking-widest transition-colors">Trang Chủ</a>
                 <a href="#history" class="text-white hover:text-brand font-bold uppercase text-sm tracking-widest transition-colors">Lịch Sử</a>
                 <a href="#pillars" class="text-white hover:text-brand font-bold uppercase text-sm tracking-widest transition-colors">4 Trụ Cột</a>
-                <!-- Link cuộn xuống phần Blog -->
-                <a href="#blog" class="text-white hover:text-brand font-bold uppercase text-sm tracking-widest transition-colors">Blog</a>
+                <!-- Link tới blog.html -->
+                <a href="blog.html" class="text-white hover:text-brand font-bold uppercase text-sm tracking-widest transition-colors">Blog</a>
                 <a href="#footer" class="text-white hover:text-brand font-bold uppercase text-sm tracking-widest transition-colors">Liên Hệ</a>
-                <button class="px-6 py-2 border-2 border-brand text-brand font-bold rounded-full hover:bg-brand hover:text-black transition-all">
+                <!-- Nút Tham Gia Ngay (Không chuyển trang) -->
+                <button type="button" class="px-6 py-2 border-2 border-brand text-brand font-bold rounded-full hover:bg-brand hover:text-black transition-all cursor-pointer">
                     Tham Gia Ngay
                 </button>
             </nav>
 
-            <!-- Mobile Menu Button -->
             <button id="menu-btn" class="md:hidden text-brand text-2xl focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
@@ -143,7 +139,7 @@
         <a href="#hero" class="mobile-link text-2xl font-heading text-white hover:text-brand">Trang Chủ</a>
         <a href="#history" class="mobile-link text-2xl font-heading text-white hover:text-brand">Lịch Sử</a>
         <a href="#pillars" class="mobile-link text-2xl font-heading text-white hover:text-brand">4 Trụ Cột</a>
-        <a href="#blog" class="mobile-link text-2xl font-heading text-white hover:text-brand">Blog</a>
+        <a href="blog.html" class="mobile-link text-2xl font-heading text-white hover:text-brand">Blog</a>
         <a href="#footer" class="mobile-link text-2xl font-heading text-white hover:text-brand">Liên Hệ</a>
     </div>
 
@@ -251,14 +247,15 @@
         </div>
     </section>
 
-    <!-- BLOG SECTION (Đã tích hợp lại vào trang chủ) -->
-    <section id="blog" class="py-24 bg-darker border-t border-gray-800">
+    <!-- PREVIEW BLOG SECTION -->
+    <section class="py-24 bg-darker border-t border-gray-800">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
                 <div>
                     <span class="text-brand font-bold uppercase tracking-widest">Tin Tức Mới Nhất</span>
                     <h2 class="text-4xl md:text-5xl font-heading mt-2 text-white">Góc Nhìn Đường Phố</h2>
                 </div>
+                <a href="blog.html" class="hidden md:inline-block text-white border-b-2 border-brand pb-1 hover:text-brand transition-colors mt-4 md:mt-0">Xem tất cả bài viết <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -276,7 +273,7 @@
                         <p class="text-gray-400 text-sm mb-4 line-clamp-3">
                             Phân tích sự khác biệt giữa dòng chảy rap cổ điển và hiện đại. Liệu Old School có đang trở lại?
                         </p>
-                        <a href="#" class="text-brand text-sm font-bold hover:underline">Đọc thêm</a>
+                        <a href="blog.html" class="text-brand text-sm font-bold hover:underline">Đọc thêm</a>
                     </div>
                 </article>
 
@@ -294,7 +291,7 @@
                         <p class="text-gray-400 text-sm mb-4 line-clamp-3">
                             Cùng nhìn lại hành trình phát triển của Rap Việt trong 10 năm qua và tương lai của cộng đồng Underground.
                         </p>
-                        <a href="#" class="text-brand text-sm font-bold hover:underline">Đọc thêm</a>
+                        <a href="blog.html" class="text-brand text-sm font-bold hover:underline">Đọc thêm</a>
                     </div>
                 </article>
 
@@ -312,7 +309,7 @@
                         <p class="text-gray-400 text-sm mb-4 line-clamp-3">
                             Từ Snapback, Oversize Tee đến Sneakers. Thời trang đường phố đã thay đổi thế giới như thế nào?
                         </p>
-                        <a href="#" class="text-brand text-sm font-bold hover:underline">Đọc thêm</a>
+                        <a href="blog.html" class="text-brand text-sm font-bold hover:underline">Đọc thêm</a>
                     </div>
                 </article>
             </div>
@@ -342,7 +339,7 @@
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-600 text-sm">© 2024 Khương Họ Trương. All Rights Reserved.</p>
                 <div class="flex gap-6 mt-4 md:mt-0">
-                    <a href="#blog" class="text-gray-600 text-sm hover:text-white">Blog</a>
+                    <a href="blog.html" class="text-gray-600 text-sm hover:text-white">Blog</a>
                     <a href="#" class="text-gray-600 text-sm hover:text-white">Chính sách bảo mật</a>
                 </div>
             </div>
@@ -357,7 +354,6 @@
         const mobileLinks = document.querySelectorAll('.mobile-link');
         const header = document.getElementById('header');
 
-        // Toggle Menu
         function toggleMenu() {
             mobileMenu.classList.toggle('open');
             document.body.classList.toggle('overflow-hidden');
@@ -365,10 +361,8 @@
         menuBtn.addEventListener('click', toggleMenu);
         closeMenuBtn.addEventListener('click', toggleMenu);
 
-        // Close menu on link click
         mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
-        // Scroll Animation
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -377,7 +371,6 @@
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-        // Header Style on Scroll
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('shadow-lg', 'bg-darker');
